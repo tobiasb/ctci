@@ -2,7 +2,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace Tests
+namespace ctci.Chapter_01
 {
     public class Exercise01
     {
