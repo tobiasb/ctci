@@ -21,5 +21,15 @@
         {
             return Value;
         }
+
+        public static StringNode From(string input)
+        {
+            if (string.IsNullOrEmpty(input)) return null;
+
+            var newNode = new StringNode(input[0].ToString());
+            newNode.Next = From(input.Substring(1));
+
+            return newNode;
+        }
     }
 }
